@@ -1,0 +1,19 @@
+@import "./main";
+
+//------------- Terms of service style -----------//
+.Restricted-Products-bgimg {
+  background-image: url(../assets/images/Restricted-img.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 455px;
+  @include respond-to("desktop-lg") {
+    height: 402px;
+  }
+  @include respond-to("desktop-md") {
+    height: 315px;
+  }
+  @include respond-to("desktop-sm") {
+    height: 220px;
+  }
+}

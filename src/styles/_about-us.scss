@@ -1,0 +1,53 @@
+@import "./main";
+
+//------------- about us section style -----------//
+.abt-wrapper {
+  .abt-text {
+    text-align: center;
+    justify-content: center;
+    font-weight: $font-weight-m;
+    font-size: $font-large;
+    padding-bottom: $base-larg-padding;
+    line-height: $line-height-large;
+    @include respond-to("desktop-lg") {
+      font-size: $font-large-lg;
+      padding-bottom: $base-larg-padding-lg;
+    }
+    @include respond-to("desktop-md") {
+      font-size: $font-large-md;
+      padding-bottom: $base-larg-padding-md;
+    }
+  }
+  .abt-select-wrapper {
+    display: flex;
+    align-items: center;
+    @include respond-to("desktop-md") {
+      display: block;
+    }
+    .abt-select {
+      .form-group select {
+        background: $white;
+        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.18);
+        border-radius: 28px;
+        margin-bottom: 0px;
+        padding: $padding-1 $padding-4 $padding-1 $base-small-padding;
+        border: none;
+        font-size: $font-base;
+        font-weight: $font-weight-m;
+        color: $placeholder;
+        @include respond-to("desktop-lg") {
+          font-size: $font-base-lg;
+          height: 35px;
+        }
+      }
+    }
+    .about-img {
+      margin-left: 90px;
+      @include respond-to("desktop-md") {
+        margin-left: 0px;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}

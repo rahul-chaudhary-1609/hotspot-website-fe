@@ -1,0 +1,282 @@
+
+//Colors//
+$color-secondary: #B60203;
+$color-primary: #FFF1F1;
+$color-black : #000000; 
+$white: #FFFFFF;
+$placeholder:#ABABAB;
+$color-bg: #464646;
+$color-gray:#797979;
+$color-gray-secondary:#767676;
+$color-black-secondary:#202020;
+
+
+
+//font-size//
+$font-base: 16px !default;
+$font-medium: ceil(($font-base + 2px)) ;  // ~ 18px;
+$font-large: ceil(($font-base + 6px )) ;  // ~  22px; 
+$font-small: ceil(($font-base - 2px )) ;   //   14px;
+$font-extra-small:  ceil(($font-base - 4px )) ;  // 12px;
+
+// LineHeight for base
+
+$line-height-base: ceil(($font-base + 10px)) ; // ~  26px;
+$line-height-medium: ceil(($font-medium + 10px)) ;  // ~  28px;
+$line-height-large: ceil(($font-large + 11px)) ;  // ~ 33px;
+$line-height-small:  ceil(($font-small + 10px)) ;  // ~  24px;
+$line-height-extra-small: ceil(($font-extra-small + 10px)) ;  // ~  22px;
+
+//Font heading 
+$font-heading-h1: ceil(($font-base + 48px)) ;  //  64px; 
+$font-heading-h2: ceil(($font-base + 32px)) ;  // ~  48px;
+$font-heading-h3: ceil(($font-base + 4px )) ;  // ~  20px;
+$font-heading-h4: ceil(($font-base + 2px)) ;  // ~ 16px; 
+$font-heading-h5: $font-base; // 14px ;
+$font-heading-h6: ceil(($font-base - 2px )) ;   //   12px;
+
+
+$font-heading-title: ceil(($font-base + 2px )) ;   //   16px ;
+$font-heading-title-large: ceil(($font-base + 8px)) ;   //   22px;
+
+// $line-height-font-heading-title : ceil(($font-heading-title + 11px)) !default ; // 35px
+
+//////// margin padding reset //////////
+
+$mp0 :0px;
+
+
+
+// letter spacing 
+$base-letter-spacing: 0.04px;
+
+//height 
+$base-height:46px !default;
+$base-small-height: ceil(($base-height - 16px)) ;   // 32px;
+$base-extra-small-height: ceil(($base-height - 24px)) ;   //   24px;
+$base-height-large: ceil(($base-height + 16px)) ;   //   64px;
+$header-height-space: 80px;
+$medium-height:56px;
+
+
+
+//icon-width//
+
+
+$item-width-height:48px !default;
+$item-small-width-height:  ceil(($item-width-height - 16px));   //  32px;
+$item-extra-small-width-height:ceil(($item-width-height - 24px));   //   24px;
+
+$left-menu-icon:  ceil(($item-width-height - 8px));   //  40px;
+
+$call-icon-height-width: 96px !default;
+
+
+//font-weight//
+
+$font-weight-s:400;
+$font-weight-m:500;
+$font-weight-b:600;
+$font-weight-bld:700;
+$font-weight-bold:900;
+ 
+// border-radius status
+
+
+$border-radius-base: 4px !default;
+$border-radius-medium: ceil(($border-radius-base + 16px)) ;   // 20px ;
+$border-radius-large: ceil(($border-radius-medium + 13px)) ;   // 33px ;
+$border-radius-small: 2px ;
+$border-radius-circle: 50% ;
+
+ 
+// Common Padding Variables
+$baseSpace : 24px !default; //  <<<== don't use this $baseSpace variable in css file.
+
+$base-padding: $baseSpace ;  //    24px; 
+$base-small-padding:  ceil(($base-padding - 2px)) ;   //   26px;
+$base-medium-padding: ceil(($base-padding - 12px)) ;   //     12px;
+$base-larg-padding: 50px;  //50px
+$case-inner-space:38px; 
+
+$base-big-padding:84px;
+// Common margin Variable
+
+
+$base-margin: $baseSpace ;  //    24px; ; 
+$base-small-margin: ceil(($base-margin - 2px)) ;   //    26px;
+$base-medium-margin: ceil(($base-margin - 12px)) ;  //  12px;
+$base-larg-margin: 50px;  //50px
+$base-outer-space-margin:38px; //38px
+
+$base-big-margin:68px; //68px
+
+// Other margin paddding variables 
+$otherBaseSpace: 12px !default; // <<<== don't use this $otherBaseSpace variable in css file.
+
+$margin-1 : ceil(($otherBaseSpace - 8px)) ;  // 4px;
+$margin-2 : ceil(($otherBaseSpace - 4px)) ;  // 8px;
+$margin-3 : $otherBaseSpace ;  // 12px;
+$margin-4 : ceil(($otherBaseSpace + 4px)) ;  // 16px;
+$margin-5 : ceil(($otherBaseSpace + 10px)) ;  // 22px;
+$margin-6: ceil(($otherBaseSpace - 2px)) ;  // 10px;
+$margin-7: ceil(($otherBaseSpace - 1px)) ;  // 11px;
+$margin-8 : ceil(($otherBaseSpace + 8px)) ;  // 20px;
+
+$padding-1 : ceil(($otherBaseSpace - 8px)) ;  // 4px;
+$padding-2 : ceil(($otherBaseSpace - 4px)) ;  // 8px;
+$padding-3 : $otherBaseSpace ;  // 12px;
+$padding-4 : ceil(($otherBaseSpace + 4px)) ;  // 16px;
+$padding-5 : ceil(($otherBaseSpace + 10px)) ;  // 22px;
+$padding-6: ceil(($otherBaseSpace - 2px)) ;  // 10px;
+$padding-7: ceil(($otherBaseSpace - 1px)) ;  // 11px;
+$padding-8 : ceil(($otherBaseSpace + 8px)) ;  // 20px;
+
+
+/////////////////////////////////////// SMALL DECICES MEDIA QUERIES  for LG /////////////////////////////////////////////////////
+
+
+// For Small desktop screen fonts
+
+$font-base-lg: 14px !default;
+$font-medium-lg: ceil(($font-base-lg + 2px)) ;  // ~ 16px;
+$font-large-lg: ceil(($font-base-lg + 6px )) ;  // ~  20px; 
+$font-small-lg: ceil(($font-base-lg - 2px )) ;   //   12px;
+$font-extra-small-lg:  ceil(($font-base-lg - 4px )) ;  // 10px;
+
+
+
+// LineHeight for base
+
+// $line-height-base-lg: ceil(($font-base-lg + 8px)) !default; // ~   24px;
+// $line-height-medium-lg: ceil(($font-medium-lg + 8px)) !default;  // ~   28px;
+// $line-height-large-lg: ceil(($font-large-lg + 8px)) !default;  // ~  32px;
+// $line-height-small-lg:  ceil(($font-small-lg + 8px)) !default;  // ~   20px;
+// $line-height-extra-small-lg: ceil(( $font-extra-small-lg  + 8px)) !default;  // ~   23px;
+// $line-height-xl-lg: 36px;
+
+// heading for lg
+
+$font-heading-lg-h1: 40px;
+$font-heading-lg-h2: 32px;
+$font-heading-lg-h3: 18px;
+$font-heading-lg-h4: 20px;
+$font-heading-lg-h5: 12px;
+$font-heading-lg-h6: 10px;
+
+//height 
+$base-height-lg:40px !default;
+$base-small-height-lg: ceil(($base-height-lg - 5px)) ;   // 35px;
+$base-extra-small-height-lg: ceil(($base-height-lg - 20px)) ;   //   20px;
+$base-height-large-lg: ceil(($base-height-lg + 10px)) ;   //   50px;
+
+
+
+// Common Padding Variables
+$baseSpace-lg : 22px !default; //  <<<== don't use this $baseSpace variable in css file.
+
+$base-padding-lg: $baseSpace-lg;  //    22px; 
+$base-small-padding-lg:  ceil(($base-padding-lg + 2px)) ;   //   24px;
+$base-medium-padding-lg: ceil(($base-padding-lg - 12px)) ;   //     10px;
+$base-larg-padding-lg: 35px;  //35px
+$case-inner-space-lg: 28px;  //28px
+
+$base-big-padding-lg:60px;
+// Common margin Variable 
+
+$base-margin-lg: $baseSpace-lg ;  //    22px; ; 
+$base-small-margin-lg: ceil(($base-margin-lg + 2px)) ;   //    24px;
+$base-medium-margin-lg: ceil(($base-margin-lg - 12px)) ;  //  10px;
+$base-larg-margin-lg: 35px;  //35px
+$base-outer-space-margin-lg:28px; //28px
+
+$base-big-margin-lg:30px; //30px
+
+// Other margin paddding variables 
+$otherBaseSpace: 10px !default; // <<<== don't use this $otherBaseSpace variable in css file.
+
+$margin-1-lg : ceil(($otherBaseSpace - 8px)) ;  // 2px;
+$margin-2-lg : ceil(($otherBaseSpace - 4px)) ;  // 6px;
+$margin-3-lg : $otherBaseSpace ;  // 10px;
+$margin-4-lg : ceil(($otherBaseSpace + 4px)) ;  // 14px;
+$margin-5-lg : ceil(($otherBaseSpace + 10px)) ; // 20px;
+$margin-6-lg : ceil(($otherBaseSpace - 2px)) ;  // 8px;
+$margin-7-lg : ceil(($otherBaseSpace - 1px)) ;  // 9px;
+$margin-8-lg : ceil(($otherBaseSpace + 8px)) ;  // 18px;
+
+$padding-1-lg : ceil(($otherBaseSpace - 8px)) ;  // 2px;
+$padding-2-lg : ceil(($otherBaseSpace - 4px)) ;  // 6px;
+$padding-3-lg : $otherBaseSpace ;  // 10px;
+$padding-4-lg : ceil(($otherBaseSpace + 4px)) ;  // 14px;
+$padding-5-lg : ceil(($otherBaseSpace + 10px)) ; // 20px;
+$padding-6-lg : ceil(($otherBaseSpace - 2px)) ;  // 8px; 
+$padding-7-lg : ceil(($otherBaseSpace - 1px)) ;  // 9px;
+$padding-8-lg : ceil(($otherBaseSpace + 8px)) ;  // 18px;
+
+////////////////////////MEDIA QUERIES FOR MAX-WIDTH 992PX FOR MD SCREEN/////////////////////////////////
+
+
+// For Small desktop screen fonts
+
+$font-base-md: 12px !default;
+$font-medium-md: ceil(($font-base-md + 2px)) ;  // ~ 14px;
+$font-large-md: ceil(($font-base-md + 4px )) ;  // ~  16px; 
+$font-small-md: ceil(($font-base-md - 2px )) ;   //   10px;
+$font-extra-small-md:  ceil(($font-base-md - 4px )) ;  //8px ;
+
+
+
+// LineHeight for base
+
+// $line-height-base-md: ceil(($font-base-md + 8px)) !default; // ~   24px;
+// $line-height-medium-md: ceil(($font-medium-md + 8px)) !default;  // ~   28px;
+// $line-height-large-md: ceil(($font-large-md + 8px)) !default;  // ~  32px;
+// $line-height-small-md:  ceil(($font-small-md + 8px)) !default;  // ~   20px;
+// $line-height-extra-small-md: ceil(( $font-extra-small-md  + 8px)) !default;  // ~   23px;
+// $line-height-xl-md: 36px;
+
+// heading for md
+
+$font-heading-md-h1: 30px;
+$font-heading-md-h2: 24px;
+$font-heading-md-h3: 14px;
+$font-heading-md-h4: 18px;
+
+//height 
+$base-height-md:35px !default;
+$base-small-height-md: ceil(($base-height-md - 5px)) ;   // 30px;
+$base-extra-small-height-md: ceil(($base-height-md - 15px)) ;   //   20px;
+$base-height-large-md: ceil(($base-height-md + 10px)) ;   //   40px;
+
+
+
+// Common Padding Variables
+$baseSpace-md : 18px !default; //  <<<== don't use this $baseSpace variable in css file.
+
+$base-padding-md: $baseSpace-md;  //    18px; 
+$base-small-padding-md:  ceil(($base-padding-md + 2px)) ;   //   20px;
+$base-medium-padding-md: ceil(($base-padding-md - 12px)) ;   //    6px;
+$base-larg-padding-md:  22px;  //22px
+$case-inner-space-md: 20px;  //20px
+
+$base-big-padding-md:30px;
+// Common margin Variable 
+
+$base-margin-md: $baseSpace-md;  //    18px; 
+$base-small-margin-md:  ceil(($base-margin-md + 2px)) ;   //   20px;
+$base-medium-margin-md: ceil(($base-margin-md - 12px)) ;   //    6px;
+$base-larg-margin-md:  22px;  //22px
+$case-inner-space-md: 20px;  //20px
+
+$base-big-margin-md:20px; //20px
+
+// Other margin paddding variables 
+$otherBaseSpace-md: 8px !default; // <<<== don't use this $otherBaseSpace variable in css file.
+
+$margin-4-md : ceil(($otherBaseSpace-md + 4px)) ;  // 12px;
+$margin-5-md : ceil(($otherBaseSpace-md + 10px)) ; // 18px;
+$margin-8-md : ceil(($otherBaseSpace-md + 8px)) ;  // 16px;
+
+$padding-4-md : ceil(($otherBaseSpace-md + 4px)) ;  // 12px;
+$padding-5-md : ceil(($otherBaseSpace-md + 10px)) ; // 18px;
+$padding-8-md : ceil(($otherBaseSpace-md + 8px)) ;  // 16px;

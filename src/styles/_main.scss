@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@import "./custom-variable";
+// Globle css //
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: $font-weight-s;
+  font-size: $font-base;
+  margin: 0px;
+  padding: 0px;
+  line-height: $line-height-base;
+  background: white;
+  color: $color-black-secondary;
+  letter-spacing: $base-letter-spacing;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+h1,
+h3,
+h3,
+h4,
+h5 {
+  font-weight: $font-weight-m;
+  margin: 0;
+  color: $color-black-secondary;
+  letter-spacing: $base-letter-spacing;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: $font-heading-h1;
+  letter-spacing: $base-letter-spacing;
+  line-height: 0%;
+  @include respond-to("desktop-lg") {
+    font-size: $font-heading-lg-h1;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-heading-md-h1;
+  }
+}
+
+h2 {
+  font-style: normal;
+  font-size: $font-heading-h2;
+  letter-spacing: $base-letter-spacing;
+  margin-bottom: 0px;
+  line-height: 72px;
+  @include respond-to("desktop-lg") {
+    font-size: $font-heading-lg-h2;
+    line-height: 50px;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-heading-md-h2;
+    line-height: 26px;
+  }
+  span {
+    color: $color-secondary;
+  }
+}
+
+h3 {
+  font-size: $font-heading-h3;
+  font-weight: $font-weight-m;
+  letter-spacing: $base-letter-spacing;
+  line-height: 0%;
+  @include respond-to("desktop-lg") {
+    font-size: $font-heading-lg-h3;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-heading-md-h3;
+  }
+}
+
+h4 {
+  font-size: $font-heading-h4;
+  letter-spacing: $base-letter-spacing;
+  line-height: 0%;
+  @include respond-to("desktop-lg") {
+    font-size: $font-heading-lg-h4;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-heading-md-h4;
+  }
+}
+
+h5 {
+  font-size: $font-base;
+  letter-spacing: $base-letter-spacing;
+  line-height: 0%;
+  @include respond-to("desktop-lg") {
+    font-size: $font-heading-lg-h5;
+  }
+}
+
+p {
+  font-size: $font-base;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 0px;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+
+li {
+  list-style: none;
+  line-height: $base-extra-small-height;
+}
+
+label {
+  font-style: normal;
+  font-weight: $font-weight-m;
+  font-size: $font-base;
+  line-height: $line-height-base;
+  letter-spacing: $base-letter-spacing;
+  color: $color-black-secondary;
+  margin: 0px;
+  margin-bottom: 10px;
+  letter-spacing: $base-letter-spacing;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+
+input {
+  background: $color-secondary;
+  box-sizing: border-box;
+  @include border-radius($border-radius-base);
+  height: $base-height;
+  color: $color-black-secondary;
+  margin: 0px;
+  padding: 0px;
+  font-size: $font-base;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $placeholder;
+  font-size: $font-base;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+
+textarea {
+  background: $color-secondary;
+  box-sizing: border-box;
+  @include border-radius($border-radius-base);
+  color: $color-black-secondary;
+  margin: 0px;
+  padding: 0px;
+}
+
+select {
+  box-sizing: border-box;
+  @include border-radius($border-radius-base);
+  height: $base-height-lg;
+  color: $color-black-secondary;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+.gv-button-primary {
+  background: $color-secondary;
+  @include border-radius($border-radius-large);
+  min-height: $base-height;
+  padding: 0px $padding-8 0px;
+  font-style: normal;
+  font-weight: $font-weight-m;
+  font-size: $font-base;
+  text-align: center;
+  letter-spacing: $base-letter-spacing;
+  color: $white;
+  outline: none;
+  border: none;
+  margin: 0px;
+  margin-bottom: 0;
+  min-width: 146px;
+  cursor: pointer;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+.btn {
+  font-size: $font-base;
+  min-height: $base-height;
+  @include respond-to("desktop-lg") {
+    font-size: $font-base-lg;
+  }
+  @include respond-to("desktop-md") {
+    font-size: $font-base-md;
+  }
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+// -------------------- comman style for the website -------------------------------//
+
+//------------- comman  Header section  style -----------//
+.header {
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: black;
+  }
+  .nab-wrapper {
+    .navbar-toggler {
+      text-align: right;
+    }
+    .navbar-brand {
+      padding-top: 19px;
+      @include respond-to("desktop-lg") {
+        padding-top: 6px;
+      }
+      @include respond-to("desktop-md") {
+        padding-top: 0px;
+      }
+      img {
+        width: 100%;
+        @include respond-to("desktop-lg") {
+          width: 80%;
+        }
+        @include respond-to("desktop-md") {
+          width: 70%;
+        }
+        @include respond-to("desktop-sm") {
+          width: 40%;
+        }
+      }
+    }
+    .nav-link-wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
+
+      li {
+        a {
+          font-style: normal;
+          font-weight: $font-weight-m;
+          font-size: $font-large;
+          line-height: $line-height-large;
+          color: $color-black;
+          padding: 0px 0px 0px 33px;
+          @include respond-to("desktop-lg") {
+            font-size: $font-large-lg;
+          }
+          @include respond-to("desktop-md") {
+            font-size: $font-large-md;
+          }
+          span {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+  .shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $white;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.18);
+    .navbar-brand {
+      padding-top: 5px;
+      margin: 0px;
+      @include respond-to("desktop-lg") {
+        padding-top: 10px;
+      }
+      img {
+        width: 80%;
+        @include respond-to("desktop-lg") {
+          width: 80%;
+        }
+        @include respond-to("desktop-md") {
+          width: 70%;
+        }
+        @include respond-to("desktop-sm") {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background: $color-secondary;
+  }
+}
+//------------- comman slider section  style -----------//
+
+#slider {
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translateX(-50%) translateY(-5%);
+    padding: 0px;
+    width: 100%;
+    h1 {
+      color: $white;
+    }
+  }
+  .carousel-indicators .active {
+    background-color: $color-secondary;
+  }
+}
+
+//  main comman heading
+.main-head {
+  text-align: center;
+  padding: $base-larg-padding 0px $base-larg-padding 0px;
+  @include respond-to("desktop-lg") {
+    padding: $base-larg-padding-lg 0px $base-larg-padding-lg 0px;
+  }
+  @include respond-to("desktop-md") {
+    padding: $base-larg-padding-md 0px $base-larg-padding-md 0px;
+  }
+}
+.main-head-tleft {
+  text-align: left;
+  padding: $base-larg-padding 0px $padding-8 0px;
+  margin-bottom: $base-small-margin;
+  border-bottom: 1px solid $color-secondary;
+  @include respond-to("desktop-lg") {
+    padding: $base-larg-padding-lg 0px $padding-8-lg 0px;
+    margin-bottom: $base-small-margin-lg;
+  }
+  @include respond-to("desktop-md") {
+    padding: $base-larg-padding-md 0px $padding-8-md 0px;
+    margin-bottom: $base-small-margin-md;
+  }
+}
+//  middle comman heading
+.middle-heading {
+  font-weight: $font-weight-bld;
+  font-size: $font-large;
+  line-height: $line-height-large;
+  color: $color-secondary;
+  margin-bottom: $base-margin;
+  @include respond-to("desktop-lg") {
+    margin-bottom: $base-margin-lg;
+  }
+  @include respond-to("desktop-md") {
+    margin-bottom: $base-margin-md;
+  }
+}
+.Restricted {
+  .middle-heading.black {
+    font-weight: $font-weight-bld;
+    font-size: $font-large;
+    color: $color-black;
+    margin-bottom: 0px;
+    line-height: 30px;
+  }
+  .middle-text {
+    margin-bottom: $base-padding;
+    @include respond-to("desktop-lg") {
+      margin-bottom: $base-padding-lg;
+    }
+    @include respond-to("desktop-md") {
+      margin-bottom: $base-padding-md;
+    }
+  }
+  ul {
+    li {
+      color: $color-gray;
+    }
+  }
+}
+.middle-text {
+  color: $color-gray;
+  font-size: $font-medium;
+  margin-bottom: $base-larg-margin;
+  @include respond-to("desktop-lg") {
+    margin-bottom: $base-larg-margin-lg;
+  }
+  @include respond-to("desktop-md") {
+    margin-bottom: $base-larg-margin-md;
+  }
+  .top-span {
+    display: block;
+    span {
+      font-size: $font-medium;
+      line-height: $line-height-base;
+      color: $color-black;
+    }
+  }
+}
+.top-span-part-two {
+  span {
+    display: block;
+    color: $placeholder;
+    margin-bottom: $base-margin;
+  }
+}
+.follows-list {
+  margin-top: -35px;
+
+  span {
+    font-weight: normal;
+    font-size: $font-medium;
+    color: $color-black;
+    margin-bottom: $base-margin;
+  }
+  p {
+    color: $placeholder;
+  }
+  .top-bottom {
+    margin-top: $base-margin;
+    margin-bottom: $base-margin;
+  }
+  ul {
+    margin-top: $base-margin;
+    li {
+      color: $placeholder;
+    }
+  }
+}
+//------------- footer section style -----------//
+.footer {
+  background: $color-bg;
+  padding: $base-larg-padding 0px $base-larg-padding 0px;
+  @include respond-to("desktop-lg") {
+    padding: $base-larg-padding-lg 0px $base-larg-padding-lg 0px;
+  }
+  @include respond-to("desktop-md") {
+    padding: $base-larg-padding-md 0px $base-larg-padding-md 0px;
+  }
+  .Quick-Links,
+  .App-Download,
+  .Social-Media {
+    h3 {
+      color: $white;
+      padding-bottom: $base-small-padding;
+      padding-top: 30px;
+      @include respond-to("desktop-lg") {
+        padding-top: 18px;
+      }
+      @include respond-to("desktop-md") {
+        padding-top: 10px;
+      }
+    }
+    .app-head,
+    .Social-head {
+      padding-left: 28px;
+    }
+    ul {
+      li {
+        color: $white;
+        padding-bottom: $padding-6;
+        font-size: $font-small;
+        cursor: pointer;
+        @include respond-to("desktop-lg") {
+          font-size: $font-small-lg;
+        }
+      }
+      a {
+        color: $white;
+        padding-bottom: $padding-6;
+        font-size: $font-small;
+        text-decoration: none;
+        @include respond-to("desktop-lg") {
+          font-size: $font-small-lg;
+        }
+      }
+    }
+    .socil-icons {
+      img {
+        margin-right: 28px;
+        cursor: pointer;
+        @include respond-to("desktop-sm") {
+          width: 55px;
+          height: 55px;
+          margin-bottom: 20px;
+        }
+      }
+      .facetwiter {
+        margin-top: $margin-8;
+        margin-bottom: $margin-8;
+      }
+    }
+  }
+
+  .download-icon {
+    padding-top: 38px;
+    img {
+      cursor: pointer;
+    }
+    .app {
+      padding-bottom: $base-larg-padding;
+      @include respond-to("desktop-sm") {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .App-Download::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0px;
+    left: -35px;
+    background: #6b6b6b;
+    @include respond-to("desktop-md") {
+      left: 0px;
+    }
+    @include respond-to("desktop-sm") {
+      display: none;
+    }
+  }
+  .App-Download::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 87px;
+    top: 0px;
+    background: #6b6b6b;
+    @include respond-to("desktop-lg") {
+      right: 45px;
+    }
+    @include respond-to("desktop-md") {
+      right: 10px;
+    }
+    @include respond-to("desktop-sm") {
+      display: none;
+    }
+  }
+  .Social-Media {
+    text-align: left;
+    @include respond-to("desktop-sm") {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .Social-head {
+      @include respond-to("desktop-sm") {
+        padding-left: 0px;
+      }
+    }
+    .socil-icons {
+      text-align: left;
+      @include respond-to("desktop-sm") {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .facetwiter,
+      .linkedgoogle {
+        text-align: left;
+        @include respond-to("desktop-sm") {
+          text-align: center;
+          justify-content: center;
+        }
+        .linked {
+          @include respond-to("desktop-sm") {
+            margin-left: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+.copy-right-wrap {
+  background: rgba(40, 40, 40, 0.99);
+  padding: $padding-4 0px $padding-4 0px;
+  .copy-right {
+    p {
+      color: $color-gray-secondary;
+    }
+  }
+  .Privacy-Policy {
+    p {
+      color: $color-gray-secondary;
+      float: right;
+    }
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next-icon {
+  display: none;
+}
+
+//backend-html comman styles
+
+.backend-html {
+  object {
+    width: 100%;
+    height: 55vh;
+  }
+}

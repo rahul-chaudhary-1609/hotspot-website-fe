@@ -1,0 +1,133 @@
+@import "./main";
+
+//------------- how to works section style -----------//
+.how-to-works-wrapper {
+  .work-wrapper {
+    display: flex;
+    @include respond-to("desktop-sm") {
+      display: block;
+    }
+    .work-property {
+      background: $white;
+      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.18);
+      border-radius: $border-radius-medium;
+      padding: $case-inner-space $padding-8 $case-inner-space $padding-8;
+      width: 345px;
+      margin-right: $base-big-margin;
+      text-align: center;
+      @include respond-to("desktop-lg") {
+        padding: $case-inner-space-lg $padding-8-lg $case-inner-space-lg $padding-8-lg;
+        margin-right: $base-big-margin-lg;
+      }
+      @include respond-to("desktop-md") {
+        padding: $case-inner-space-md $padding-4-md $case-inner-space-md $padding-4-md;
+        margin-right: $base-big-margin-md;
+      }
+      @include respond-to("desktop-sm") {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+        margin-bottom: $margin-8;
+        width: 290px;
+      }
+      img {
+        width: auto;
+        @include respond-to("desktop-md") {
+          width: 55%;
+        }
+      }
+      h3 {
+        padding: $base-larg-padding 0px $padding-4 0px;
+        @include respond-to("desktop-lg") {
+          padding: $base-larg-padding-lg 0px $padding-4-lg 0px;
+        }
+        @include respond-to("desktop-md") {
+          padding: $base-larg-padding-md 0px $padding-4-md 0px;
+        }
+      }
+      p {
+        color: $placeholder;
+      }
+    }
+    .work-property.active {
+      background: $color-primary;
+    }
+    .work-property:last-child {
+      margin-right: 0px;
+      @include respond-to("desktop-sm") {
+        margin: 0px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .learn-more-btn {
+    justify-content: center;
+    text-align: center;
+    margin: $base-larg-margin 0px $base-larg-margin 0px;
+    @include respond-to("desktop-lg") {
+      margin: $base-larg-margin-lg 0px $base-larg-margin-lg 0px;
+    }
+    @include respond-to("desktop-md") {
+      margin: $base-larg-margin-md 0px $base-larg-margin-md 0px;
+    }
+  }
+}
+
+//------------- Hotspot details section style -----------//
+
+.Who-is-Hotspot-wrapper {
+  background: $color-primary;
+  padding: $base-big-padding 0px $base-big-padding 0px;
+  @include respond-to("desktop-lg") {
+    padding: $base-big-padding-lg 0px $base-big-padding-lg 0px;
+  }
+  @include respond-to("desktop-md") {
+    padding: $base-big-padding-md 0px $base-big-padding-md 0px;
+  }
+  .Who-is-Hotspot-info {
+    display: flex;
+    @include respond-to("desktop-sm") {
+      display: block;
+    }
+    .Hotspot-details {
+      background: $white;
+      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.18);
+      border-radius: $border-radius-medium;
+      padding: $case-inner-space $padding-8 $case-inner-space $padding-8;
+      width: 345px;
+      margin-right: $base-big-margin;
+      text-align: center;
+      @include respond-to("desktop-lg") {
+        padding: $case-inner-space-lg $padding-8-lg $case-inner-space-lg $padding-8-lg;
+        margin-right: $base-big-margin-lg;
+      }
+      @include respond-to("desktop-md") {
+        padding: $case-inner-space-md $padding-8-md $case-inner-space-md $padding-8-md;
+        margin-right: $base-big-margin-md;
+      }
+      @include respond-to("desktop-sm") {
+        text-align: center;
+        justify-content: center;
+        margin: 0px auto;
+        margin-bottom: $margin-8;
+        width: 290px;
+      }
+      img {
+        width: auto;
+        @include respond-to("desktop-md") {
+          width: 75%;
+        }
+      }
+      h3 {
+        padding: $padding-8 0px $base-larg-padding 0px;
+      }
+    }
+    .Hotspot-details:last-child {
+      margin-right: 0px;
+      @include respond-to("desktop-sm") {
+        margin: 0px auto;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

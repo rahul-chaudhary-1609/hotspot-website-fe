@@ -1,0 +1,19 @@
+@import "./main";
+
+//------------- Terms of service style -----------//
+.term-sercive-bgimg {
+  background-image: url(../assets/images/term-condction.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 491px;
+  @include respond-to("desktop-lg") {
+    height: 402px;
+  }
+  @include respond-to("desktop-md") {
+    height: 315px;
+  }
+  @include respond-to("desktop-sm") {
+    height: 220px;
+  }
+}
