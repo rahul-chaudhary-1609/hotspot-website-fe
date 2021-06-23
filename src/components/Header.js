@@ -43,12 +43,12 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
+                <Link className="nav-link" to={"/Becomehotspot"}>
                   Become a <span>Hotspot</span>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
+                <Link className="nav-link" to={"/ContactUs"}>
                   Contact <span>Us</span>
                 </Link>
               </li>

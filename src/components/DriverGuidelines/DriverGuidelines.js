@@ -11,7 +11,7 @@ function DriverGuidelines() {
 
   useEffect(() => {
     const getdata = async () => {
-      const data = await axios("http://3.228.159.69/website/getStaticContent/4");
+      const data = await axios("http://3.228.159.69/website/getStaticContent/11");
       // console.log(data);
       setdata(data);
       sethtml(data.data.getStaticContentsData.staticContent.page_url);

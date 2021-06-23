@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Parser from "html-react-parser";
+function renderhtml(page_url) {
+  let url = `http://3.228.159.69/website/htmlFileUrlToTextConvert?file_url=${page_url}`;
+  return <object type="text/html" data={url}></object>;
+}
 
 function RestrictedProducts() {
+  const [data, setdata] = useState(null);
+  const [html, sethtml] = useState(null);
+
+  useEffect(() => {
+    const getdata = async () => {
+      const data = await axios("http://3.228.159.69/website/getStaticContent/10");
+      // console.log(data);
+      setdata(data);
+      sethtml(data.data.getStaticContentsData.staticContent.page_url);
+    };
+    getdata();
+  }, []);
+  console.log(data && data.data.getStaticContentsData.staticContent);
+
   return (
     <>
       <div class="Restricted-Products-bgimg"></div>
+
       <section class="Privacy-Policy-info">
         <div class="container">
           <h2 class="main-head-tleft">
             Restricted <span>Products List </span>
           </h2>
-          <div class="sercive-info">
+          <div className="backend-html">{renderhtml(html)}</div>
+
+          {/* <div class="sercive-info">
             <p class="middle-text">
               We want the Hotspot App to be a safe experience for everyone involved: Rushers,
               customers, and merchants. Accordingly, Hotspot does not allow the purchase or
@@ -150,7 +173,6 @@ function RestrictedProducts() {
               <p class="middle-text">Limited to two cartons per order.</p>
             </div>
           </div>
-          driver guidelines
           <div class="sercive-info">
             <p class="middle-heading">AGE VERIFICATION ITEMS:</p>
             <div class="Restricted">
@@ -161,7 +183,7 @@ function RestrictedProducts() {
               <p class="middle-heading black">Tobacco</p>
               <p class="middle-text">Must be 21+ to purchase.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -11,7 +11,7 @@ export default function CustomerGuideline() {
 
   useEffect(() => {
     const getdata = async () => {
-      const data = await axios("http://3.228.159.69/website/getStaticContent/3");
+      const data = await axios("http://3.228.159.69/website/getStaticContent/9");
       // console.log(data);
       setdata(data);
       sethtml(data.data.getStaticContentsData.staticContent.page_url);

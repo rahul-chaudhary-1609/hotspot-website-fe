@@ -11,6 +11,9 @@ import Privacypolicy from "./components/PrivacyPolicy/Privacypolicy";
 import CustomerGuideline from "./components/CustomerGuidelines/CustomerGuideline";
 import RestrictedProducts from "./components/RestrictedProductsList/RestrictedProducts";
 import DriverGuidelines from "./components/DriverGuidelines/DriverGuidelines";
+import AccessibilityStatement from "./components/AccessibilityStatement/AccessibilityStatement";
+import Becomehotspot from "./components/BecomeHotspot/Becomehotspot";
+import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route exact path="/CustomerGuideline" component={CustomerGuideline} />
           <Route exact path="/RestrictedProducts" component={RestrictedProducts} />
           <Route exact path="/DriverGuidelines" component={DriverGuidelines} />
+          <Route exact path="/Becomehotspot" component={Becomehotspot} />
+          <Route exact path="/ContactUs" component={ContactUs} />
+          <Route exact path="/AccessibilityStatement" component={AccessibilityStatement} />
         </Switch>
         <Footer />
       </Router>

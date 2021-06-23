@@ -36,6 +36,11 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link to={"/AccessibilityStatement"}>
+                    Accessiblity Statement <span className="sr-only">(current)</span>
+                  </Link>
+                </li>
+                <li>
                   <Link to={"/DriverGuidelines"}>
                     Driver Guidelines <span className="sr-only">(current)</span>
                   </Link>
