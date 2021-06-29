@@ -21,7 +21,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/"}>
+                  <Link to={"/ContactUs"}>
                     Contact Us <span className="sr-only">(current)</span>
                   </Link>
                 </li>
