@@ -543,7 +543,7 @@ button {
     width: 1px;
     height: 92%;
     top: 0px;
-    left: -35px;
+    left: -75px;
     background: #6b6b6b;
     @include respond-to("desktop-md") {
       left: 0px;
@@ -557,7 +557,7 @@ button {
     position: absolute;
     width: 1px;
     height: 92%;
-    right: 87px;
+    right: 76px;
     top: 0px;
     background: #6b6b6b;
     @include respond-to("desktop-lg") {

@@ -14,11 +14,13 @@ import DriverGuidelines from "./components/DriverGuidelines/DriverGuidelines";
 import AccessibilityStatement from "./components/AccessibilityStatement/AccessibilityStatement";
 import Becomehotspot from "./components/BecomeHotspot/Becomehotspot";
 import ContactUs from "./components/ContactUs/ContactUs";
+import ScrollToTop from "./components/scroll/ScrollToTop";
 import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />

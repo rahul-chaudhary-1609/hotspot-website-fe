@@ -41,11 +41,11 @@ function Footer() {
                       Accessiblity Statement <span className="sr-only">(current)</span>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to={"/DriverGuidelines"}>
                       Driver Guidelines <span className="sr-only">(current)</span>
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to={"/CustomerGuideline"}>
                       Community Guidelines <span className="sr-only">(current)</span>

@@ -24,13 +24,13 @@ function Abtwhoishotspot() {
   return (
     <section class="abt-wrapper">
       <div class="container">
-        <h2 class="main-head-tleft">
+        <h2 class="main-head">
           Who is <span>Hotspot</span>
         </h2>
-        {/* <p class="abt-text">
+        <p class="abt-text">
           Hotspot is a technology company that helps local restaurants expand into new markets while
           giving people the opportunity to earn more for doing less
-        </p> */}
+        </p>
         <div className="backend-html">{renderhtml(html)}</div>
 
         {/* <div class="abt-select-wrapper">.

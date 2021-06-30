@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import whoIsHotspot from "../assets/images/Who-is-Hotspot.png";
 import becomehotspot from "../assets/images/Become-a-Hotspot.png";
 import getApp from "../assets/images/Get-app.png";
@@ -10,7 +11,9 @@ function HostInfo() {
           <div class="Hotspot-details">
             <img class="img-fluid" src={whoIsHotspot} alt="" />
             <h3>Who is Hotspot</h3>
-            <button>Start earning</button>
+            <Link to={"/aboutus"}>
+              <button>Start earning</button>
+            </Link>
           </div>
           <div class="Hotspot-details">
             <img class="img-fluid" src={becomehotspot} alt="" />

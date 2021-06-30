@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import delivery from "../assets/images/delivery.png";
 import PlaceOrder from "../assets/images/Place-order.png";
 import location from "../assets/images/location.png";
@@ -27,7 +28,9 @@ function HowToWorks() {
           </div>
         </div>
         <div class="learn-more-btn">
-          <button>Learn More</button>
+          <Link to={"/aboutus"}>
+            <button>Learn More</button>
+          </Link>
         </div>
       </div>
     </section>
