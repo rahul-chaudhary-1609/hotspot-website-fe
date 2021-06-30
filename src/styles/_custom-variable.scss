@@ -82,16 +82,17 @@ $border-radius-circle: 50%;
 $baseSpace: 24px !default; //  <<<== don't use this $baseSpace variable in css file.
 
 $base-padding: $baseSpace; //    24px;
-$base-small-padding: ceil(($base-padding - 2px)); //   26px;
+$base-small-padding: ceil(($base-padding - 2px)); //   22px;
 $base-medium-padding: ceil(($base-padding - 12px)); //     12px;
 $base-larg-padding: 50px; //50px
 $case-inner-space: 38px;
+$case-inner-space-base: 30px;
 
 $base-big-padding: 84px;
 // Common margin Variable
 
 $base-margin: $baseSpace; //    24px; ;
-$base-small-margin: ceil(($base-margin - 2px)); //    26px;
+$base-small-margin: ceil(($base-margin - 2px)); //    22px;
 $base-medium-margin: ceil(($base-margin - 12px)); //  12px;
 $base-larg-margin: 50px; //50px
 $base-outer-space-margin: 38px; //38px
@@ -160,6 +161,7 @@ $base-padding-lg: $baseSpace-lg; //    22px;
 $base-small-padding-lg: ceil(($base-padding-lg + 2px)); //   24px;
 $base-medium-padding-lg: ceil(($base-padding-lg - 12px)); //     10px;
 $base-larg-padding-lg: 35px; //35px
+$case-inner-space-base-lg: 25px;
 $case-inner-space-lg: 28px; //28px
 
 $base-big-padding-lg: 60px;

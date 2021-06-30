@@ -4,6 +4,7 @@
 .how-to-works-wrapper {
   .work-wrapper {
     display: flex;
+    // padding: 0px 135px;
     @include respond-to("desktop-sm") {
       display: block;
     }
@@ -12,7 +13,7 @@
       box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.18);
       border-radius: $border-radius-medium;
       padding: $case-inner-space $padding-8 $case-inner-space $padding-8;
-      width: 345px;
+      width: 100%;
       margin-right: $base-big-margin;
       text-align: center;
       @include respond-to("desktop-lg") {
@@ -113,13 +114,13 @@
         width: 290px;
       }
       img {
-        width: auto;
+        width: 143px;
         @include respond-to("desktop-md") {
           width: 75%;
         }
       }
       h3 {
-        padding: $padding-8 0px $base-larg-padding 0px;
+        padding: 0px 0px $case-inner-space-base 0px;
       }
     }
     .Hotspot-details:last-child {
