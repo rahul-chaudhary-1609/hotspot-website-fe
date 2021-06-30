@@ -63,8 +63,18 @@ function Footer() {
               <div class="App-Download">
                 <h3 class="app-head">App Download</h3>
                 <div class="download-icon">
-                  <img class="app img-fluid" src={appstore} alt="" />
-                  <img class="play img-fluid" src={playstore} alt="" />
+                  <a
+                    target="blank"
+                    href="https://play.google.com/store/apps/details?id=in.myinnos.AppManager&hl=en_IN&gl=US"
+                  >
+                    <img class="app img-fluid" src={appstore} alt="" />
+                  </a>
+                  <a
+                    target="blank"
+                    href="https://play.google.com/store/apps/details?id=in.myinnos.AppManager&hl=en_IN&gl=US"
+                  >
+                    <img class="play img-fluid" src={playstore} alt="" />
+                  </a>
                 </div>
               </div>
             </div>
