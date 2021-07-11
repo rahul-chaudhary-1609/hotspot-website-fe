@@ -633,7 +633,7 @@ button {
   display: none;
 }
 
-//backend-html comman styles
+//backend-html comman styles // ALL PAGES HEIGHT
 
 .backend-html {
   object {
@@ -641,6 +641,32 @@ button {
     height: 85vh;
   }
 }
+.backend-html.about {
+  object {
+    height: 750px;
+  }
+}
+.backend-html.Privacy-Policy {
+  object {
+    height: 710vh;
+  }
+}
+.backend-html.termofservice {
+  object {
+    height: 2420vh;
+  }
+}
+.backend-html.Community-Guidelines {
+  object {
+    height: 440vh;
+  }
+}
+.backend-html.restictedproduct {
+  object {
+    height: 370vh;
+  }
+}
+
 // important media queary
 @media (min-width: 1400px) {
   .container {

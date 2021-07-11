@@ -30,7 +30,7 @@ function RestrictedProducts() {
           <h2 class="main-head-tleft">
             Restricted <span>Products List </span>
           </h2>
-          <div className="backend-html">{renderhtml(html)}</div>
+          <div className="backend-html restictedproduct">{renderhtml(html)}</div>
 
           {/* <div class="sercive-info">
             <p class="middle-text">

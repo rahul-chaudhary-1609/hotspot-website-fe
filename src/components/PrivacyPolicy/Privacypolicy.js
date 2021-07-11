@@ -29,7 +29,7 @@ function Privacypolicy() {
           <h2 class="main-head-tleft">
             Privacy <span>Policy </span>
           </h2>
-          <div className="backend-html">{renderhtml(html)}</div>
+          <div className="backend-html Privacy-Policy">{renderhtml(html)}</div>
 
           {/* <div class="sercive-info">
             <p class="middle-heading">This Privacy Policy applies to:</p>

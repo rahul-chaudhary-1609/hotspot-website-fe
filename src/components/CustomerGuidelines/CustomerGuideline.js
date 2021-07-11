@@ -28,7 +28,7 @@ export default function CustomerGuideline() {
           <h2 class="main-head-tleft">
             Customer Community <span>Guidelines </span>
           </h2>
-          <div className="backend-html">{renderhtml(html)}</div>
+          <div className="backend-html Community-Guidelines">{renderhtml(html)}</div>
 
           {/* <div class="sercive-info">
             <p class="middle-text">

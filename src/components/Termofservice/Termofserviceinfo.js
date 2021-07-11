@@ -26,7 +26,7 @@ function Termofserviceinfo() {
         <h2 class="main-head-tleft">
           Terms of <span>Service </span>
         </h2>
-        <div className="backend-html">{renderhtml(html)}</div>
+        <div className="backend-html termofservice">{renderhtml(html)}</div>
 
         {/* <div class="sercive-info">
           <p class="middle-heading">1. Introduction: Our App and the Hotspot Service</p>

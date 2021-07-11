@@ -31,7 +31,7 @@ function Abtwhoishotspot() {
           Hotspot is a technology company that helps local restaurants expand into new markets while
           giving people the opportunity to earn more for doing less
         </p>
-        <div className="backend-html">{renderhtml(html)}</div>
+        <div className="backend-html about">{renderhtml(html)}</div>
 
         {/* <div class="abt-select-wrapper">.
           <div class="abt-select">
