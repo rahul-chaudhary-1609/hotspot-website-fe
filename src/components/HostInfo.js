@@ -12,7 +12,7 @@ function HostInfo() {
             <img class="img-fluid" src={whoIsHotspot} alt="" />
             <h3>Who is Hotspot</h3>
             <Link to={"/aboutus"}>
-              <button>Start earning</button>
+              <button>Learn More</button>
             </Link>
           </div>
           <div class="Hotspot-details">
@@ -23,7 +23,9 @@ function HostInfo() {
           <div class="Hotspot-details">
             <img class="img-fluid" src={getApp} alt="" />
             <h3>Get the app</h3>
-            <button>Get the app</button>
+            <a target="blank" href="https://www.apple.com/in/app-store/">
+              <button>Get the app</button>
+            </a>
           </div>
         </div>
       </div>

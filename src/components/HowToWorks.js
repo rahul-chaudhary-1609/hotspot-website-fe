@@ -16,7 +16,7 @@ function HowToWorks() {
             <h3>Select delivery time</h3>
             <p>Select your delivery time from the calender</p>
           </div>
-          <div class="work-property active">
+          <div class="work-property ">
             <img class="img-fluid" src={PlaceOrder} alt="" />
             <h3>Place order</h3>
             <p>Select restaurant and place your order before the cutoff time period</p>
@@ -28,9 +28,9 @@ function HowToWorks() {
           </div>
         </div>
         <div class="learn-more-btn">
-          <Link to={"/aboutus"}>
+          {/* <Link to={"/aboutus"}>
             <button>Learn More</button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
