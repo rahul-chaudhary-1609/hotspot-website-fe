@@ -12,13 +12,13 @@ function HostInfo() {
             <img class="img-fluid" src={whoIsHotspot} alt="" />
             <h3>Who is Hotspot</h3>
             <Link to={"/aboutus"}>
-              <button>Learn More</button>
+              <button>Learn more</button>
             </Link>
           </div>
           <div class="Hotspot-details">
             <img class="img-fluid" src={becomehotspot} alt="" />
             <h3 class="mt-5">Become a Hotspot</h3>
-            <button>Sign up your store</button>
+            <button>Sign up</button>
           </div>
           <div class="Hotspot-details">
             <img class="img-fluid" src={getApp} alt="" />

@@ -77,12 +77,24 @@ function Footer() {
                 <h3 class="Social-head">Social Media</h3>
                 <div class="socil-icons">
                   <div class="row facetwiter">
-                    <img src={facebook} alt="" />
-                    <img src={twite} alt="" />
+                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                      {" "}
+                      <img src={facebook} alt="" />
+                    </a>
+                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                      {" "}
+                      <img src={twite} alt="" />
+                    </a>
                   </div>
                   <div class="row linkedgoogle">
-                    <img class="linked" src={linkedin} alt="" />
-                    <img src={googleplush} alt="" />
+                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                      {" "}
+                      <img class="linked" src={linkedin} alt="" />
+                    </a>
+                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                      {" "}
+                      <img src={googleplush} alt="" />
+                    </a>
                   </div>
                 </div>
               </div>

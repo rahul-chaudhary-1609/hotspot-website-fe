@@ -9,21 +9,7 @@ function Slider() {
         <Carousel.Item>
           <img className="d-block w-100" src={homebg} alt="First slide" />
           <Carousel.Caption>
-            <h1>FREE IS HOT</h1>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img className="d-block w-100" src={homebg} alt="Second slide" />
-          <Carousel.Caption>
-            <h1>FREE IS HOT</h1>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img className="d-block w-100" src={homebg} alt="Third slide" />
-          <Carousel.Caption>
-            <h1>FREE IS HOT</h1>
+            <h1 className="pl-5">Food delivery for free</h1>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

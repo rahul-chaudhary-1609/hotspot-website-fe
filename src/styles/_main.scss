@@ -345,6 +345,8 @@ button {
   }
   .carousel-indicators .active {
     background-color: $color-secondary;
+    // display: contents;
+    display: none;
   }
 }
 
