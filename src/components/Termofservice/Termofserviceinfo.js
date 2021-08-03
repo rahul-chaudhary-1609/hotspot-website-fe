@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Parser from "html-react-parser";
+import {apiConstatnts} from "../../constants";
 function renderhtml(page_url) {
-  let url = `http://3.228.159.69/website/htmlFileUrlToTextConvert?file_url=${page_url}`;
+  let url = `${apiConstatnts.BASE_URL}${apiConstatnts.htmlFileUrlToTextConvert}?file_url=${page_url}`;
   return <object type="text/html" data={url}></object>;
 }
 function Termofserviceinfo() {
@@ -11,7 +12,7 @@ function Termofserviceinfo() {
 
   useEffect(() => {
     const getdata = async () => {
-      const data = await axios("http://3.228.159.69/website/getStaticContent/1");
+      const data = await axios(`${apiConstatnts.BASE_URL}${apiConstatnts.getStaticContent}/1`);
       // console.log(data);
       setdata(data);
       sethtml(data.data.getStaticContentsData.staticContent.page_url);
