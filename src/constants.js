@@ -1,5 +1,6 @@
 export const apiConstatnts={
-    BASE_URL:`http://3.228.159.69`,
+    DEV_BASE_URL:`http://3.228.159.69`,
+    BASE_URL:`https://api.togohotspot.com`,
 
     getStaticContent:`/website/getStaticContent`,
     htmlFileUrlToTextConvert:`/website/htmlFileUrlToTextConvert`,

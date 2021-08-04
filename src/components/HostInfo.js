@@ -18,7 +18,9 @@ function HostInfo() {
           <div class="Hotspot-details">
             <img class="img-fluid" src={becomehotspot} alt="" />
             <h3 class="mt-5">Become a Hotspot</h3>
+            <Link to={"/Becomehotspot"}>
             <button>Sign up</button>
+            </Link>
           </div>
           <div class="Hotspot-details">
             <img class="img-fluid" src={getApp} alt="" />

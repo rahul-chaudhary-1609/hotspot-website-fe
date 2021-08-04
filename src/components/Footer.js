@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import appstore from "../assets/images/appstore.png";
 import playstore from "../assets/images/playstore.png";
@@ -6,7 +6,12 @@ import facebook from "../assets/images/facebook.png";
 import twite from "../assets/images/twiter.png";
 import linkedin from "../assets/images/linkedin.png";
 import googleplush from "../assets/images/googleplush.png";
+import { Popover } from 'react-tiny-popover'
 function Footer() {
+let [isPopoverOpenF,setIsPopoverOpenF]=useState(false);
+let [isPopoverOpenT,setIsPopoverOpenT]=useState(false);
+let [isPopoverOpenI,setIsPopoverOpenI]=useState(false);
+let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
   return (
     <>
       <section class="footer">
@@ -77,24 +82,73 @@ function Footer() {
                 <h3 class="Social-head">Social Media</h3>
                 <div class="socil-icons">
                   <div class="row facetwiter">
-                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                  <Popover
+                      isOpen={isPopoverOpenF}
+                      positions={['top']} // preferred positions by priority
+                      content={
+                        <div 
+                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          >comming soon...</div>
+                        }
+                      padding={10}
+                      onClickOutside={() => setIsPopoverOpenF(false)}
+                    >
+                    <a onMouseOver={()=>setIsPopoverOpenF(true)} onMouseLeave={()=>setIsPopoverOpenF(false)}>
                       {" "}
                       <img src={facebook} alt="" />
                     </a>
-                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                    </Popover>
+
+                    <Popover
+                      isOpen={isPopoverOpenT}
+                      positions={['top']} // preferred positions by priority
+                      content={
+                        <div 
+                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          >comming soon...</div>
+                        }
+                      padding={10}
+                      onClickOutside={() => setIsPopoverOpenT(false)}
+                    >
+                    <a onMouseOver={()=>setIsPopoverOpenT(true)} onMouseLeave={()=>setIsPopoverOpenT(false)}>
                       {" "}
                       <img src={twite} alt="" />
                     </a>
+                    </Popover>
                   </div>
                   <div class="row linkedgoogle">
-                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                  <Popover
+                      isOpen={isPopoverOpenI}
+                      positions={['top']} // preferred positions by priority
+                      content={
+                        <div 
+                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          >comming soon...</div>
+                        }
+                      padding={10}
+                      onClickOutside={() => setIsPopoverOpenI(false)}
+                    >
+                    <a onMouseOver={()=>setIsPopoverOpenI(true)} onMouseLeave={()=>setIsPopoverOpenI(false)}>
                       {" "}
                       <img class="linked" src={linkedin} alt="" />
                     </a>
-                    <a href="#" data-toggle="tooltip" title="coming soon!">
+                    </Popover>
+                    <Popover
+                      isOpen={isPopoverOpenG}
+                      positions={['top']} // preferred positions by priority
+                      content={
+                        <div 
+                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          >comming soon...</div>
+                        }
+                      padding={10}
+                      onClickOutside={() => setIsPopoverOpenG(false)}
+                    >
+                    <a onMouseOver={()=>setIsPopoverOpenG(true)} onMouseLeave={()=>setIsPopoverOpenG(false)}>
                       {" "}
                       <img src={googleplush} alt="" />
                     </a>
+                    </Popover>
                   </div>
                 </div>
               </div>
