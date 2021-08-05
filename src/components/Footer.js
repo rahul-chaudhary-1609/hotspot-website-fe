@@ -87,7 +87,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       positions={['top']} // preferred positions by priority
                       content={
                         <div 
-                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
                           >comming soon...</div>
                         }
                       padding={10}
@@ -104,7 +104,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       positions={['top']} // preferred positions by priority
                       content={
                         <div 
-                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
                           >comming soon...</div>
                         }
                       padding={10}
@@ -122,7 +122,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       positions={['top']} // preferred positions by priority
                       content={
                         <div 
-                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
                           >comming soon...</div>
                         }
                       padding={10}
@@ -138,7 +138,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       positions={['top']} // preferred positions by priority
                       content={
                         <div 
-                          style={{backgroundColor:"white", color:"black",fontSize:"2rem", padding:"15px", borderRadius:"10px"}}
+                          style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
                           >comming soon...</div>
                         }
                       padding={10}
