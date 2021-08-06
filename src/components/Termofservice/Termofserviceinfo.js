@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Parser from "html-react-parser";
-import { apiConstatnts } from "../../constants";
-import { Frame } from "../../utils/Frame";
-function renderhtml(page_url) {
-  let url = `${apiConstatnts.BASE_URL}${apiConstatnts.htmlFileUrlToTextConvert}?file_url=${page_url}`;
-  //return <object type="text/html" data={url} ></object>;
-  return <iframe width="100%" height="100%" src={page_url} style={{width:"100%", height:"100%"}}></iframe>
-}
+import {apiConstatnts} from "../../constants";
+
 function Termofserviceinfo() {
   const [data, setdata] = useState(null);
   const [html, sethtml] = useState(null);
-
-
 
   useEffect(() => {
     const getdata = async () => {
       const data = await axios(`${apiConstatnts.BASE_URL}${apiConstatnts.getStaticContent}/1`);
       // console.log(data);
       setdata(data);
+      console.log(data.data.getStaticContentsData.staticContent.page_url)
       sethtml(data.data.getStaticContentsData.staticContent.page_url);
     };
     getdata();
@@ -31,8 +25,8 @@ function Termofserviceinfo() {
         <h2 class="main-head-tleft">
           Terms of <span>Service </span>
         </h2>
-        <div className="backend-html">
-          <Frame url={html}/>
+        <div className="backend-html termofservice">
+          <iframe src={html}></iframe>
         </div>
       </div>
     </section>

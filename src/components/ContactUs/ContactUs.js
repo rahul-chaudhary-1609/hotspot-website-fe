@@ -3,10 +3,7 @@ import axios from "axios";
 import Parser from "html-react-parser";
 import Commanheadbg from "../Commanheadbg";
 import {apiConstatnts} from "../../constants";
-function renderhtml(page_url) {
-  let url = `${apiConstatnts.BASE_URL}${apiConstatnts.htmlFileUrlToTextConvert}?file_url=${page_url}`;
-  return <object type="text/html" data={url}></object>;
-}
+
 export default function ContactUs() {
   const [data, setdata] = useState(null);
   const [html, sethtml] = useState(null);
@@ -30,7 +27,9 @@ export default function ContactUs() {
           <h2 class="main-head-tleft">
             Contact <span>Us </span>
           </h2>
-          <div className="backend-html">{renderhtml(html)}</div>
+          <div className="backend-html">
+            <iframe src={html}></iframe>
+          </div>
         </div>
       </section>
     </>

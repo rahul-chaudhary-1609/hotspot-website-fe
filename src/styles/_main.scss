@@ -638,34 +638,41 @@ button {
 //backend-html comman styles // ALL PAGES HEIGHT
 
 .backend-html {
-  object {
-    width: 100%;
+  iframe{
+    width:100%;
+    border: none;
     height: 85vh;
   }
 }
 .backend-html.about {
-  object {
+  iframe {
     height: 750px;
   }
 }
 .backend-html.Privacy-Policy {
-  object {
-    height: 750vh;
+  iframe {
+    height: 600vh;
   }
 }
 .backend-html.termofservice {
-  object {
-    height: 2320vh;
+  iframe {
+    height: 1636.5vh;
   }
 }
 .backend-html.Community-Guidelines {
-  object {
-    height: 460vh;
+  iframe {
+    height: 337vh;
   }
 }
 .backend-html.restictedproduct {
-  object {
-    height: 370vh;
+  iframe {
+    height: 310vh;
+  }
+}
+
+.backend-html.Accessibility-Statement {
+  iframe {
+    height: 40vh;
   }
 }
 

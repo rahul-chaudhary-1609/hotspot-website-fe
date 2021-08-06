@@ -3,10 +3,7 @@ import axios from "axios";
 import Parser from "html-react-parser";
 import Commanheadbg from "../Commanheadbg";
 import {apiConstatnts} from "../../constants"
-function renderhtml(page_url) {
-  let url = `${apiConstatnts.BASE_URL}${apiConstatnts.htmlFileUrlToTextConvert}?file_url=${page_url}`;
-  return <object type="text/html" data={url}></object>;
-}
+
 function AccessibilityStatement() {
   const [data, setdata] = useState(null);
   const [html, sethtml] = useState(null);
@@ -16,6 +13,7 @@ function AccessibilityStatement() {
       const data = await axios(`${apiConstatnts.BASE_URL}${apiConstatnts.getStaticContent}/8`);
       // console.log(data);
       setdata(data);
+      console.log(data.data.getStaticContentsData.staticContent.page_url)
       sethtml(data.data.getStaticContentsData.staticContent.page_url);
     };
     getdata();
@@ -30,7 +28,9 @@ function AccessibilityStatement() {
           <h2 class="main-head-tleft">
             Accessibility <span>Statement </span>
           </h2>
-          <div className="backend-html">{renderhtml(html)}</div>
+          <div className="backend-html Accessibility-Statement">
+            <iframe src={html}></iframe>
+          </div>
         </div>
       </section>
     </>
