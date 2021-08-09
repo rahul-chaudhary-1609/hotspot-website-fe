@@ -88,7 +88,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       content={
                         <div 
                           style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
-                          >comming soon...</div>
+                          >coming soon...</div>
                         }
                       padding={10}
                       onClickOutside={() => setIsPopoverOpenF(false)}
@@ -105,7 +105,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       content={
                         <div 
                           style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
-                          >comming soon...</div>
+                          >coming soon...</div>
                         }
                       padding={10}
                       onClickOutside={() => setIsPopoverOpenT(false)}
@@ -123,7 +123,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       content={
                         <div 
                           style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
-                          >comming soon...</div>
+                          >coming soon...</div>
                         }
                       padding={10}
                       onClickOutside={() => setIsPopoverOpenI(false)}
@@ -139,7 +139,7 @@ let [isPopoverOpenG,setIsPopoverOpenG]=useState(false);
                       content={
                         <div 
                           style={{backgroundColor:"white", color:"black",fontSize:"1rem", padding:"10px", borderRadius:"10px"}}
-                          >comming soon...</div>
+                          >coming soon...</div>
                         }
                       padding={10}
                       onClickOutside={() => setIsPopoverOpenG(false)}

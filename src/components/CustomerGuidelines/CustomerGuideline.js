@@ -28,7 +28,7 @@ export default function CustomerGuideline() {
             Customer Community <span>Guidelines </span>
           </h2>
           <div className="backend-html Community-Guidelines">
-            <iframe src={html}></iframe>
+            <iframe src={html} ></iframe>         
           </div>
         </div>
       </section>
