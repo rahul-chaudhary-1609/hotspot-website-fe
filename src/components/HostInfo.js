@@ -10,7 +10,7 @@ function HostInfo() {
         <div class="Who-is-Hotspot-info">
           <div class="Hotspot-details">
             <img class="img-fluid" src={whoIsHotspot} alt="" />
-            <h3>Who is Hotspot</h3>
+            <h3>About Us</h3>
             <Link to={"/aboutus"}>
               <button>Learn more</button>
             </Link>

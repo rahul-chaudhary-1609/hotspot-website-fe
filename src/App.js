@@ -4,7 +4,7 @@ import "./App.css";
 import "./styles/style.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Termofservice from "./components/Termofservice/Termofservice";
 import Commanheadbg from "./components/Commanheadbg";
 import Privacypolicy from "./components/PrivacyPolicy/Privacypolicy";

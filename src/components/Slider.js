@@ -9,8 +9,8 @@ function Slider() {
         <Carousel.Item>
           <img className="d-block w-100" src={homebg} alt="First slide" />
           <Carousel.Caption>
-            <h1 className="pl-5">FREE IS HOT</h1>
-            <p className="pl-5" style={{fontSize:"1.5rem",marginTop:"2%"}}>Food delivery for free</p>
+            <h1 className="pl-5">Be Fee-Less</h1>
+            <p className="pl-5" style={{fontSize:"1.5rem",marginTop:"2%"}}>Delivery with no fees!</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

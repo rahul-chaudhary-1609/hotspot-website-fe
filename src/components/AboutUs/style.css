@@ -1,0 +1,54 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.flex-row-carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.carousel-div{
+    width: 75%;
+    height: 50%;
+}
+
+.carousel-card{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+.carousel-card-heading{
+    color: black;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.carousel-card-desc{
+    color: rgba(0,0,0,0.4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+    max-width: 350px;
+    overflow-wrap: break-word;
+}
