@@ -36,11 +36,13 @@ export default function Header(){
                 <img className="w-100" src={BeFreeLessPhoneImage} alt="First slide" />
             </div>
             <div className="w-75 flex-row-carousel">
-                <Carousel className=" carousel-div" showArrows={false} centerMode={false} showStatus={false}>
-                    {carouselList.map((card,index)=>{
-                        return <CaroudelCard {...{...card}}/>
-                    })}
-                </Carousel>
+                <div className="carousel-div">
+                    <Carousel className="carousel-custom" showArrows={true} centerMode={false} showStatus={false}>
+                        {carouselList.map((card,index)=>{
+                            return <CaroudelCard {...{...card}}/>
+                        })}
+                    </Carousel>
+                </div>
             </div>
         </div>
     </>)

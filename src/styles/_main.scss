@@ -644,7 +644,16 @@ button {
     height: 600px;
   }
 }
+
+.backend-html.contact-us {
+  iframe{
+    width:100%;
+    border: none;
+    height: 500px;
+  }
+}
 .backend-html.about {
+  margin-top: 20px;
   iframe {
     height: 750px;
   }

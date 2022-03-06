@@ -23,13 +23,13 @@ function Abtwhoishotspot() {
   return (
     <section class="abt-wrapper">
       <div class="container">
-        <h2 class="main-head">
+        <h2 class="main-head-tleft">
           About <span>Us</span>
         </h2>
-        <p class="abt-text">
+        {/* <p class="abt-text">
           Hotspot is a technology company that helps local restaurants expand into new markets while
           giving people the opportunity to earn more for doing less
-        </p>
+        </p> */}
         <Header/> 
         <div className="backend-html about">
           <iframe src={html}></iframe>

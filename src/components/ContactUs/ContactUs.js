@@ -24,10 +24,10 @@ export default function ContactUs() {
       <Commanheadbg />
       <section class="Privacy-Policy-info">
         <div class="container">
-          <h2 class="main-head-tleft">
+          <h2 class="main-head-tleft" style={{marginBottom:"0px"}}>
             Contact <span>Us </span>
           </h2>
-          <div className="backend-html">
+          <div className="backend-html contact-us">
             <iframe src={html}></iframe>
           </div>
         </div>
