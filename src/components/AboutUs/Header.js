@@ -2,7 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-import BeFreeLessPhoneImage from "../../assets/images/hotspot_be_free_less.png"
+import BeFreeLessPhoneImage from "../../assets/images/hotspot_be_free_less.jpg"
 
 import "./style.css";
 
@@ -18,8 +18,8 @@ function CaroudelCard(props){
 export default function Header(){
     let carouselList=[
         {
-            heading:"Who is Hotspot",
-            desc:"Hotspot offers Fee-Less deliveries on every order from every restaurant!",
+            heading:"Who Is Hotspot",
+            desc:"Hotspot offers free delivery on every order!",
         },
         {
             heading:"Set Delivery Times",
@@ -27,7 +27,7 @@ export default function Header(){
         },
         {
             heading:"Exclusive Service",
-            desc:"Hotspot's Fee-Less delivery service are exclusive to Hotspot users! Download the app today!",
+            desc:"Hotspot's free delivery service is exclusive to Hotspot users. Download the app today!",
         }
     ]
     return (<>

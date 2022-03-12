@@ -86,7 +86,7 @@ function Becomehotspot() {
             <ToastContainer />
           </div>
           <div className="backend-html">
-          <div><h3 style={{fontSize:"2rem"}}>Let us know if you want Fee-Less delivery!</h3>
+          <div><h3 style={{fontSize:"2rem"}}>Let us know if you want free delivery!</h3>
           {/* <h4 className="mt-3" style={{fontSize:"1rem"}}></h4> */}
             <form className="mb-5 mt-5" method="POST" onSubmit={handleSubmit} autoComplete="off">
               <div className="form-group">
